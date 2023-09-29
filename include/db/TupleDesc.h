@@ -36,8 +36,7 @@ namespace db {
      * TupleDesc describes the schema of a tuple.
      */
     class TupleDesc {
-        // TODO pa1.1: add private members
-        using iterator = void*; // replace void* with a container iterator or a custom iterator implementation
+        using iterator = std::vector<TDItem>::iterator;
     public:
         TupleDesc() {}
 
@@ -139,6 +138,8 @@ namespace db {
         iterator begin() const;
 
         iterator end() const;
+    private:
+        std::vector<TDItem> items_;
     };
 }
 
