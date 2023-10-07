@@ -1,0 +1,21 @@
+# ninja log v5
+0	12	1696291123767889259	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	89d5ed68d62243f3
+0	12	1696291123767889259	/Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	89d5ed68d62243f3
+13	885	1696291124640800245	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	767b5e10acc4925c
+13	885	1696291124640800245	/Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	767b5e10acc4925c
+885	897	1696291124653160255	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	b3d8b6e8e9f7d034
+885	897	1696291124653160255	/Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	b3d8b6e8e9f7d034
+897	908	1696291124663718864	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	7d29af962f086497
+897	908	1696291124663718864	/Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	7d29af962f086497
+908	926	1696291124681546202	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	fae603bcd5fedc71
+908	926	1696291124681546202	/Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	fae603bcd5fedc71
+926	942	1696291124697933020	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	1a2672c3b57f3ef
+926	942	1696291124697933020	/Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	1a2672c3b57f3ef
+942	953	1696291124709398601	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	c895edd17bc3c5cf
+942	953	1696291124709398601	/Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	c895edd17bc3c5cf
+953	965	1696291124720616720	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	5d234cfb8e02a261
+953	965	1696291124720616720	/Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	5d234cfb8e02a261
+965	981	1696291124737055538	CMakeFiles/googletest-populate-complete	3e0564cead4440a
+965	981	1696291124737055538	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	3e0564cead4440a
+965	981	1696291124737055538	/Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	3e0564cead4440a
+965	981	1696291124737055538	/Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	3e0564cead4440a

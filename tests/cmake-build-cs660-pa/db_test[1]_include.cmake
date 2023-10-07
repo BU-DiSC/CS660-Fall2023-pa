@@ -1,0 +1,5 @@
+if(EXISTS "/Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa/db_test[1]_tests.cmake")
+  include("/Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa/db_test[1]_tests.cmake")
+else()
+  add_test(db_test_NOT_BUILT db_test_NOT_BUILT)
+endif()

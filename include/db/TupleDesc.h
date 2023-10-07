@@ -12,6 +12,7 @@ namespace db {
      * A helper class to facilitate organizing the information of each field
      */
     class TDItem {
+        int size;
     public:
         /**
          * The type of the field
@@ -37,7 +38,12 @@ namespace db {
      */
     class TupleDesc {
         // TODO pa1.1: add private members
-        using iterator = void*; // replace void* with a container iterator or a custom iterator implementation
+        std::size_t size;
+//        using iterator = std::vector<TDItem>::iterator; // replace this with a container iterator or a custom iterator implementation
+        std::vector<TDItem> items;
+        using iterator = std::vector<TDItem>::const_iterator;
+        friend struct std::hash<TupleDesc>;
+
     public:
         TupleDesc() {}
 

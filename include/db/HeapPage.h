@@ -33,6 +33,7 @@ namespace db {
         uint8_t *header;
         Tuple *tuples;
         int numSlots;
+        friend class HeapFileIterator;
 
         /**
          * Suck up tuples from the source file.

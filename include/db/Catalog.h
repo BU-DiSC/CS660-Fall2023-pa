@@ -5,13 +5,15 @@
 #include <db/DbFile.h>
 #include <db/Utility.h>
 
+#include <utility>
+
 namespace db {
 
     struct Table {
         DbFile *file;
         std::string name;
         std::string pkeyField;
-
+        Table() : file(nullptr), name(""), pkeyField("") {} // 添加默认构造函数
         Table(DbFile *file, const std::string &name, const std::string &pkeyField) : file(file), name(name), pkeyField(pkeyField) {}
     };
 
@@ -24,6 +26,7 @@ namespace db {
      */
     class Catalog {
         // TODO pa1.2: add private members
+        std::unordered_map<std::string, Table> tables;
     public:
         // disable copy
         Catalog(const Catalog &) = delete;

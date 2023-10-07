@@ -24,7 +24,8 @@ namespace db {
 template<>
 struct std::hash<db::PageId> {
     std::size_t operator()(const db::PageId &r) const {
-        return std::hash<int>()(r.getTableId()) ^ std::hash<int>()(r.pageNumber());
+        return r.getTableId() ^ r.pageNumber();
+        // return std::hash<int>()(r.getTableId()) ^ std::hash<int>()(r.pageNumber());
     }
 };
 

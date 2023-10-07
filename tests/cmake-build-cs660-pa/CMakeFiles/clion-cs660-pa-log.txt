@@ -1,0 +1,88 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/victor/660/cs660-pa/tests -B /Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa
+CMake Warning (dev) in CMakeLists.txt:
+  No project() command is present.  The top-level CMakeLists.txt file must
+  contain a literal, direct call to the project() command.  Add a line of
+  code such as
+
+    project(ProjectName)
+
+  near the top of the file, but after cmake_minimum_required().
+
+  CMake is pretending there is a "project(Project)" command on the first
+  line.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) in CMakeLists.txt:
+  cmake_minimum_required() should be called prior to this top-level project()
+  call.  Please see the cmake-commands(7) manual for usage documentation of
+  both commands.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The C compiler identification is AppleClang 14.0.3.14030022
+-- The CXX compiler identification is AppleClang 14.0.3.14030022
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FetchContent.cmake:1282 (message):
+  The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+  not set.  The policy's OLD behavior will be used.  When using a URL
+  download, the timestamps of extracted files should preferably be that of
+  the time of extraction, otherwise code that depends on the extracted
+  contents might not be rebuilt if the URL changes.  The OLD behavior
+  preserves the timestamps from the archive instead, but this is usually not
+  what you want.  Update your project to the NEW behavior or specify the
+  DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+  robustness issue.
+Call Stack (most recent call first):
+  CMakeLists.txt:3 (FetchContent_Declare)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Python3: /Users/victor/opt/anaconda3/bin/python3.9 (found version "3.9.13") found components: Interpreter 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.26)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done (3.1s)
+CMake Warning (dev) at CMakeLists.txt:8 (add_executable):
+  Policy CMP0003 should be set before this line.  Add code such as
+
+    if(COMMAND cmake_policy)
+      cmake_policy(SET CMP0003 NEW)
+    endif(COMMAND cmake_policy)
+
+  as early as possible but after the most recent call to
+  cmake_minimum_required or cmake_policy(VERSION).  This warning appears
+  because target "db_test" links to some libraries for which the linker must
+  search:
+
+    db
+
+  and other libraries with known full path:
+
+    /Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa/lib/libgtest_main.a
+
+  CMake is adding directories in the second list to the linker search path in
+  case they are needed to find libraries from the first list (for backwards
+  compatibility with CMake 2.4).  Set policy CMP0003 to OLD or NEW to enable
+  or disable this behavior explicitly.  Run "cmake --help-policy CMP0003" for
+  more information.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/victor/660/cs660-pa/tests/cmake-build-cs660-pa

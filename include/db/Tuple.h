@@ -13,7 +13,11 @@ namespace db {
      */
     class Tuple {
         // TODO pa1.1: add private members
-        using iterator = void*; // replace void* with a container iterator or a custom iterator implementation
+        TupleDesc desc;
+        std::vector<Field*> fields;
+        const RecordId *recordId;
+        using iterator = std::vector<Field*>::iterator;
+
     public:
         Tuple() = default;
 
@@ -55,9 +59,9 @@ namespace db {
         /**
          *   An iterator which iterates over all the fields of a tuple
          */
-        iterator begin() const;
+        const std::__wrap_iter<std::vector<Field *, std::allocator<Field *>>::const_pointer> begin() const;
 
-        iterator end() const;
+        const std::__wrap_iter<std::vector<Field *, std::allocator<Field *>>::const_pointer> end() const;
 
         /**
          * For debugging purposes. Not necessary for the assignment.

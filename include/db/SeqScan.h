@@ -13,8 +13,14 @@
 namespace db {
     class SeqScanIterator {
         // TODO pa1.6: add private members
+        DbFile &dbFile;                     // Reference to the DbFile
+        TransactionId *transactionId;       // Reference to the TransactionId
+        int currentPageId; // Current PageId
+        int currentTuplePosition;           // Current tuple position in the current page
+        db::Tuple currentTuple;
     public:
-        SeqScanIterator(/* TODO pa1.6: add parameters */);
+//        SeqScanIterator(/* TODO pa1.6: add parameters */);
+        SeqScanIterator(TransactionId *tid, DbFile &file, int startPageId);
 
         bool operator!=(const SeqScanIterator &other) const;
 
@@ -31,6 +37,9 @@ namespace db {
     class SeqScan {
         using iterator = SeqScanIterator;
         // TODO pa1.6: add private members
+        TransactionId *tid;            // The transaction this scan is running as a part of.
+        int tableid;                   // The table to scan.
+        std::string tableAlias;        // The alias of this table.
     public:
 
         /**
